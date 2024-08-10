@@ -1,0 +1,4 @@
+Wather application 
+Usinf API key from OpenWatherMap 
+Working nice 
+it needs some UI optimisation 

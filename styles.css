@@ -1,0 +1,134 @@
+:root {
+    --primary-bg: #1b1a1a;
+    --container-bg: #abafe9;
+    --box-shadow: rgba(0, 0, 0, 0.2);
+    --input-bg: #fff;
+    --input-padding: 10px;
+    --input-font-size: 18px;
+    --btn-bg: blueviolet;
+    --btn-hover-bg: #0062cc;
+    --btn-color: #fff;
+    --icon-size: 100px;
+    --region-font-size: 50px;
+    --temperature-font-size: 48px;
+    --description-font-size: 24px;
+    --details-bg: #868ef5;
+    --details-padding: 20px;
+    --details-border-radius: 5px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--primary-bg);
+}
+
+/* Container styling */
+.container {
+    background-color: var(--container-bg);
+    box-shadow: 0 0 20px var(--box-shadow);
+    margin: 50px auto;
+    max-width: 600px;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+}
+
+/* Form styling */
+form {
+    margin-bottom: 20px;
+}
+
+/* Input fields styling */
+form input[type="text"] {
+    padding: var(--input-padding);
+    border: none;
+    outline: none;
+    font-size: var(--input-font-size);
+    width: calc(100% - 2 * var(--input-padding));
+    margin-bottom: 10px;
+}
+
+/* Submit button styling */
+form input[type="submit"] {
+    background-color: var(--btn-bg);
+    color: var(--btn-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+    background-color: var(--btn-hover-bg);
+}
+
+/* Icon styling */
+.icon img {
+    width: var(--icon-size);
+    height: var(--icon-size);
+    object-fit: contain;
+}
+
+.region {
+    font-size: var(--region-font-size);
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Temperature and description styling */
+.temperature {
+    font-size: var(--temperature-font-size);
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.description {
+    font-size: var(--description-font-size);
+    margin: 20px;
+}
+
+/* Details container and items */
+.details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.details > div {
+    padding: var(--details-padding);
+    background-color: var(--details-bg);
+    flex: 1;
+    border-radius: var(--details-border-radius);
+    text-align: center;
+    min-height: 45px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .region {
+        font-size: 40px;
+    }
+
+    .temperature {
+        font-size: 36px;
+    }
+
+    .description {
+        font-size: 20px;
+    }
+
+    .details > div {
+        padding: 15px;
+    }
+}
