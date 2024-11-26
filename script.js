@@ -85,7 +85,7 @@ function displayWeatherData(data, locationName) {
   weatherDataE1.querySelector(".description").textContent = weather[0].description;
   weatherDataE1.querySelector(".details").innerHTML = `
     <div>Feels like: ${main.feels_like}°C</div>
-    <div>Humidity: ${main.humidity}%</div>
+    <div>Relative Humidity: ${main.humidity}%</div>
     <div>Wind speed: ${wind.speed} m/s</div>
   `;
 }
