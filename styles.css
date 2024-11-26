@@ -30,7 +30,7 @@ body {
     box-shadow: 0 0 20px var(--box-shadow);
     margin: 50px auto;
     max-width: 600px;
-    border-radius: 5px;
+    border-radius: 20px;
     padding: 20px;
     position: relative;
     text-align: center;
@@ -57,10 +57,10 @@ form input[type="submit"] {
     color: var(--btn-color);
     border: none;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 form input[type="submit"]:hover {
